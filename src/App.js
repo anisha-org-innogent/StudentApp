@@ -11,6 +11,9 @@ class App extends Component{
           defaultBranch:"all"
       }
     }
+
+
+    
     addNewRecord = ()=>{
     //  window.alert(this.roll.value);
        let newStudent ={roll : this.roll.value , name : this.name.value , branch :this.branch.value, mobile: this.mobile.value}
