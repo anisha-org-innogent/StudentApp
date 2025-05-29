@@ -13,12 +13,13 @@ class App extends Component{
     }
 
 
-    
+
     addNewRecord = ()=>{
     //  window.alert(this.roll.value);
        let newStudent ={roll : this.roll.value , name : this.name.value , branch :this.branch.value, mobile: this.mobile.value}
        this.setState({ studentList : [...this.state.studentList, newStudent]});
        window.alert("...called");
+       console.log(newStudent);
     }                 
     deleteRecord = (roll)=>{
        if(window.confirm("Are you Sure")){
